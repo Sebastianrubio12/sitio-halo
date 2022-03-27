@@ -3,6 +3,7 @@
 const { src, dest } = require('gulp');
 const imagemin = require('gulp-imagemin');
 const cache = require('gulp-cache');
+const Webb = require('gulp-webp');
 
 
 function imagenes(done){
@@ -15,4 +16,15 @@ function imagenes(done){
     done();
 }
 
+function versionWebb(done){
+    const opciones ={
+        quality:50
+    }
+    src('src/img/**/*.{png,jpg,jpeg}')
+        .pipe(Webb(opciones))
+        .pipe( dest('src/img'))
+    done();
+}
+
 exports.imagenes = imagenes;
+exports.versionWebb = versionWebb;
