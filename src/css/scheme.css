@@ -4,7 +4,7 @@
   }
 
   header {
-    background-image: url(../img/halo-infinite-cover.jpeg);
+    background-image: url(../img/halo-infinite-cover.webp);
   }
 
   nav {
@@ -88,7 +88,7 @@
   }
 
   footer {
-    background-image: url(../img/master-chief.jpg);
+    background-image: url(../img/master-chief.webp);
   }
 }
 
